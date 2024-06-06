@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react"
 import CharacterBoxes from "./CharacterBoxes";
+import Confetti from "react-confetti"
 import "./Game.css"
 
 const Game = ({setWord, setWordList, input}) => {
@@ -58,7 +59,7 @@ const Game = ({setWord, setWordList, input}) => {
                 
             <div id="boxes"><CharacterBoxes setWord={charArrayOfWord} indexes={indexes}/></div>
             {indexes.length === charArrayOfWord.length?(
-             <div id="definition"><p>{wordDef.length? wordDef : "Hmmm, I need a better dictionary..."}</p></div>
+             <div id="definition"><Confetti/><p>{wordDef.length? wordDef : "Hmmm, I need a better dictionary..."}</p></div>
             ):(null)}
             </div>
         </>
