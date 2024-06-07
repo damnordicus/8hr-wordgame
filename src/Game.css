@@ -10,6 +10,10 @@
 #boxes{
     display: flex;
     flex-direction: row;
+    /* background-color: #000000; */
+    background-image: linear-gradient(black, rgb(97, 97, 97), black);
+    padding: 6px;
+    box-shadow: 5px 5px 5px 2px rgb(49, 49, 49);
 
 }
 
@@ -81,4 +85,13 @@
     padding: .75rem 3rem;
     font-size: 1.25rem;
   }
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: "Chalk";
+  text-align: center;
 }
